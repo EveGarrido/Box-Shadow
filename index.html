@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet"> 
+  <title>BoxShadow</title>
+</head>
+<body>
+  <main>
+    <h1>Box Shadow Generator</h1>
+    <div class="container-boxs">
+      <form class="inputs-boxs">  
+        <h2>Box Shadows</h2>
+          <div class="box">
+            <label for="colors">Color Shadow</label>
+            <input type="color" name="colors">
+          </div>
+          <div class="box">
+            <label>Horizontal Offset</label>
+            <input type="range" min="-100" max="100">
+            <input type="number" min="-100" max="100">
+          </div>
+          <div class="box">
+            <label>Vertical Offset</label>
+            <input class="range-vertical" type="range" name="vertical" min="-100" max="100">
+            <input class="number-vertical" type="number" min="-100" max="100">
+          </div>
+          <div class="box">
+            <label>Blur Radius</label>
+            <input class="range-blur" type="range" min="0" max="50">
+            <input class="number-blur" type="number" min="0" max="50">
+          </div>
+          <div class="box">
+            <label>Spread Radius</label>
+            <input class="range-spread" type="range" min="0" max="100">
+            <input class="number-spread" type="number" min="0" max="100">
+          </div>
+      </form>
+      <div class="boxs square-box">
+        <div class="square"></div>
+      </div> 
+      <form class="inputs-boxs">
+        <h2>Box Properties</h2>
+          <div class="box">
+            <label>Color Box</label>
+            <input class="color-box" type="color">
+          </div>
+          <div class="box">
+            <label>Width</label>
+            <input class="range-width" type="range" min="0" max="400">
+            <input class="number-width" type="number" min="0" max="400">
+          </div>
+          <div class="box">
+            <label>Height</label>
+            <input class="range-height" type="range" min="0" max="400">
+            <input class="number-height" type="number" min="0" max="400">
+          </div>
+          <div class="box">
+            <label>Border Radius</label>
+            <input class="range-border-radius" type="range" min="0" max="200">
+            <input class="number-border-radius" type="number" min="0" max="200">
+          </div>
+      </form>
+    </div>
+    <div class="container-button">
+      <input class="button" type="button" value="Show Code">
+      <p class="code">border-box: - - - - -</p>
+    </div>
+  </main>
+</body>
+<script src="./app.js"></script>
+</html>

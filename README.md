@@ -1,3 +1,3 @@
 # Box-Shadow
 Box Shadow Generator
-box-shadow-generator1.netlify.app
+https://box-shadow-generator1.netlify.app/
